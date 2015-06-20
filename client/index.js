@@ -1,7 +1,8 @@
 Meteor.startup(function(){
     Accounts.ui.config({
         requestPermissions: {
-            facebook: ['user_likes', 'email']
+            facebook: ['user_likes', 'email'],
+            google: ['email']
         },
         requestOfflineToken: {
             google: true
