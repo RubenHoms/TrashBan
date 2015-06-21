@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body{
-	background: #d8f3fc;
+	background: white;
 }
 
 #wrapper-main{
@@ -25,6 +25,14 @@ body{
 	height: 640px;
 	width: 360px;
 	background: url(../images/bg_temp.gif);
+  	top: 85px;
+  	left: 19px;
+  	position: absolute;
+}
+
+#wrapper-scanner{
+	height: 640px;
+	width: 360px;
   	top: 85px;
   	left: 19px;
   	position: absolute;
@@ -88,3 +96,11 @@ body{
   	position: absolute;
 }
 
+#overlay-qr{
+	height: 640px;
+	width: 360px;
+	background: url(../images/overlay_qr.png);
+  	top: 0px;
+  	right: 0px;
+  	position: absolute;
+}

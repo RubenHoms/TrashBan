@@ -17,8 +17,61 @@ Template.monster.helpers({
             });
 
             var health = feedingTimes.length > 10 ? 10 : feedingTimes.length;
+            switch(health){
+                case 0:
+                    Session.set("trash", 5);
+                    break;
+                case 1:
+                    Session.set("trash", 5);
+                    break;
+                case 2:
+                    Session.set("trash", 4);
+                    break;
+                case 3:
+                    Session.set("trash", 4);
+                    break;
+                case 4:
+                    Session.set("trash", 3);
+                    break;
+                case 5:
+                    Session.set("trash", 3);
+                    break;
+                case 6:
+                    Session.set("trash", 2);
+                    break;
+                case 7:
+                    Session.set("trash", 2);
+                    break;
+                case 8:
+                    Session.set("trash", 1);
+                    break;
+                case 9:
+                    Session.set("trash", 1);
+                    break;
+                case 10:
+                    Session.set("trash", 0);
+                    break;
+                default:
+                    Session.set("trash", 5);
+            }
             return 45 + health * 20;
-
         }
     },
+    getTrashSize: function() {
+        var array = [];
+        for(var i = 0; i < Session.get("trash"); i++) {
+            array.push(i);
+        }
+    }
 });
+
+Template.monster.rendered = function() {
+    if( this.data ) {
+        $("#monster-gif").remove();
+        $("#wrapper-monster").prepend('<img id="monster-gif" src="/images/monster_eating.gif">');
+        Meteor.setTimeout(function() {
+            $("#monster-gif").remove();
+            $("#wrapper-monster").prepend('<img id="monster-gif" src="/images/monster.gif">');
+        }, 5000);
+    }
+};

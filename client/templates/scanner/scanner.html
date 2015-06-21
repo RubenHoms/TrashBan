@@ -1,3 +1,10 @@
 <template name="scanner">
-    {{> qrScanner}}
+    <div id="wrapper-main">
+        <div id="wrapper-phone">
+            <div id="wrapper-scanner">
+                {{> qrScanner}}
+                <div id="overlay-qr"></div>
+            </div>
+        </div>
+    </div>
 </template>
