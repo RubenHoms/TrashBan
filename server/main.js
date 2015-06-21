@@ -1,4 +1,4 @@
-Meteor.startup(function(){
+Meteor.startup(function() {
     // Startup code goes in here.
     Accounts.config({});
 
@@ -10,4 +10,10 @@ Meteor.startup(function(){
             Bins.insert(bin);
         });
     }
+
+    Accounts.onCreateUser(function(option, user) {
+        user.profile = option.profile;
+        Monster.insert( { user: user._id, name: "Grover", hat: "tophat", timesFed: [] } );
+        return user;
+    });
 });
