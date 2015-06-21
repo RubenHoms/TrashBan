@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body{
-	background: white;
+	background: #d8f3fc;
 }
 
 #wrapper-main{
@@ -24,7 +24,7 @@ body{
 #wrapper-game{
 	height: 640px;
 	width: 360px;
-	background: url(../images/bg_temp.gif);
+	background: url(../images/bg.jpg) -100px;
   	top: 85px;
   	left: 19px;
   	position: absolute;
@@ -41,8 +41,8 @@ body{
 #wrapper-monster{
 	height: 269px;
 	width: 230px;
-  	top: 240px;
-  	left: 70px;
+  	top: 180px;
+  	left: 50px;
   	position: absolute;
 }
 
@@ -56,10 +56,10 @@ body{
 }
 
 #ui-pointer{
-	height: 40px;
-	width: 16px;
+	height: 44px;
+	width: 20px;
 	background: url(../images/pointer.png);
-  	top: 9px;
+  	top: 7px;
   	position: absolute;
 }
 
@@ -104,3 +104,58 @@ body{
   	right: 0px;
   	position: absolute;
 }
+
+#wrapper-trash{
+	height: 200px;
+	width: 360px;
+  	top: 400px;
+  	left: 0px;
+  	position: absolute;
+	overflow: hidden;
+}
+
+#trash1{
+	height: 44px;
+	width: 69px;
+	background: url(../images/trash1.png);
+	top: 95px;
+  	left: -15px;
+  	position: absolute;
+}
+
+#trash2{
+	height: 34px;
+	width: 66px;
+	background: url(../images/trash2.png);
+	top: 20px;
+  	left: 10px;
+  	position: absolute;
+}
+
+#trash3{
+	height: 49px;
+	width: 81px;
+	background: url(../images/trash3.png);
+	top: 110px;
+  	left: 200px;
+  	position: absolute;
+}
+
+#trash4{
+	height: 32px;
+	width: 66px;
+	background: url(../images/trash4.png);
+	top: 120px;
+  	left: 80px;
+  	position: absolute;
+}
+
+#trash5{
+	height: 39px;
+	width: 90px;
+	background: url(../images/trash5.png);
+	top: 50px;
+  	left: 300px;
+  	position: absolute;
+}
+
