@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background: #d8f3fc;
+}
+
+#wrapper-main{
+	width: 100%;
+	height: 100%;
+}
+
+#wrapper-phone{
+	height: 808px;
+	width: 401px;
+	background:url(../images/mockup-galaxy.png);
+  	margin-left: 0 auto;
+  	margin: -404px 0 0 -200px;
+  	top: 50%;
+  	left: 50%;
+  	position: absolute;
+}
+
+#wrapper-game{
+	height: 640px;
+	width: 360px;
+	background: url(../images/bg_temp.gif);
+  	top: 85px;
+  	left: 19px;
+  	position: absolute;
+}
+
+#wrapper-monster{
+	height: 269px;
+	width: 230px;
+  	top: 240px;
+  	left: 70px;
+  	position: absolute;
+}
+
+#ui-top{
+	height: 50px;
+	width: 310px;
+	background: url(../images/ui_top.png);
+  	top: 25px;
+  	left: 25px;
+  	position: absolute;
+}
+
+#ui-pointer{
+	height: 40px;
+	width: 16px;
+	background: url(../images/pointer.png);
+  	top: 9px;
+  	position: absolute;
+}
+
+#ui-lower{
+	height: 62px;
+	width: 360px;
+  	bottom: 25px;
+  	left: 0px;
+  	position: absolute;
+}
+
+#ui-icon-feed{
+	height: 62px;
+	width: 78px;
+  	top: 0px;
+  	left: 25px;
+  	position: absolute;
+}
+
+#ui-icon-stats{
+	height: 62px;
+	width: 45px;
+  	top: 0px;
+  	left: 50%;
+	margin-left: -22px;
+  	position: absolute;
+}
+
+#ui-icon-report{
+	height: 60px;
+	width: 60px;
+  	top: 1px;
+  	right: 25px;
+  	position: absolute;
+}
+

@@ -28,13 +28,6 @@ Meteor.methods({
         }
     },
     /**
-     * This function will calculate how hungry the monster is depending
-     * on how many times it has eaten in the last month.
-     */
-    calculateHunger: function() {
-
-    },
-    /**
      * This function will create a monster for a new user.
      * @param name
      * @param hat
